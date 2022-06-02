@@ -4,8 +4,8 @@ import { Header } from "./components";
 function App() {
   const [theme, setTheme] = useState(false);
   return (
-    <div className="App" id={`${theme ? "dark" : "light"}`}>
-      <div className="main">
+    <div className={`App ${theme ? "dark" : "light"}`}>
+      <div className="main dark:bg-slate-900">
         <Header theme={theme} setTheme={setTheme} />
       </div>
     </div>
