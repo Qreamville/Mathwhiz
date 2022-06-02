@@ -1,13 +1,14 @@
-import React, { createContext, useContext, useReducer } from "react";
-import { quizReducer } from "./Reducers";
+import React, { createContext, useContext, useState } from "react";
 
 const QuizContext = createContext();
 const AppContext = ({ children }) => {
-  const [quizState, quizDispatch] = useReducer(quizReducer, {
-    score: 0,
-  });
+  const [questions, setQuestions] = useState(null);
 
-  return <QuizContext.Provider value={{}}>{children}</QuizContext.Provider>;
+  return (
+    <QuizContext.Provider value={{ questions, setQuestions }}>
+      {children}
+    </QuizContext.Provider>
+  );
 };
 
 export const useGlobalContext = () => {

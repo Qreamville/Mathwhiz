@@ -1,14 +1,22 @@
 import { useState } from "react";
-import { Header } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header, Menu } from "./components";
+import Quiz from "./components/quiz/Quiz";
 
 function App() {
   const [theme, setTheme] = useState(false);
   return (
-    <div className={`App ${theme ? "dark" : "light"}`}>
-      <div className="main dark:bg-slate-900">
-        <Header theme={theme} setTheme={setTheme} />
+    <BrowserRouter>
+      <div className={`App ${theme ? "dark" : "light"}`}>
+        <div className="main dark:bg-slate-900">
+          <Header theme={theme} setTheme={setTheme} />
+          <Routes>
+            <Route path="/" element={<Menu />} />
+            <Route path="/quiz" element={<Quiz />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
