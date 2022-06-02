@@ -4,8 +4,8 @@ import { FaSun, FaMoon } from "react-icons/fa";
 const Header = ({ theme, setTheme }) => {
   return (
     <header className="container mx-auto flex justify-between items-center p-2">
-      <h1 className="text-black dark:text-white text-3xl">
-        Math<span>whiz</span>
+      <h1 className="text-slate-900 dark:text-white text-3xl">
+        Math<span className="text-orange-600">whiz</span>
       </h1>
       <h1>
         {theme ? (
@@ -15,7 +15,7 @@ const Header = ({ theme, setTheme }) => {
           />
         ) : (
           <FaMoon
-            className="cursor-pointer text-3xl"
+            className="cursor-pointer text-slate-900 text-3xl"
             onClick={() => setTheme(!theme)}
           />
         )}
