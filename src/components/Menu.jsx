@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useGlobalContext } from "../../context/Context";
-import data from "../../assets/data.json";
+import { useGlobalContext } from "../context/Context";
+import data from "../assets/data.json";
 
 const Menu = () => {
   const { questions, setQuestions } = useGlobalContext();

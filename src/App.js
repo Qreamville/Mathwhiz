@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Menu } from "./components";
-import Quiz from "./components/quiz/Quiz";
+import { Header, Menu, Quiz } from "./components";
 
 function App() {
   const [theme, setTheme] = useState(false);
