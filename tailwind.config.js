@@ -1,8 +1,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "class",
   theme: {
-    screen: {
+    screens: {
       xs: "320px",
       sm: "576px",
       md: "768px",
