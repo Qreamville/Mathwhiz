@@ -5,7 +5,7 @@ function App() {
   const [theme, setTheme] = useState(false);
   return (
     <div className={`App ${theme ? "dark" : ""}`}>
-      <div className="main dark:bg-black container mx-auto">
+      <div className="main dark:bg-black">
         <Header theme={theme} setTheme={setTheme} />
       </div>
     </div>
