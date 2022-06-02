@@ -1,7 +1,7 @@
 import React from "react";
 
 const Quiz = () => {
-  return <div>Quiz</div>;
+  return <div className="container mx-auto">Quiz</div>;
 };
 
 export default Quiz;
