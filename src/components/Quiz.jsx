@@ -39,25 +39,25 @@ const Quiz = () => {
         {/* The questions options starts */}
         <div className="options grid grid-cols-2 gap-3 mt-8">
           <button
-            className="bg-white text-xl rounded shadow-md"
+            className="bg-white text-xl rounded shadow-md hover:bg-green-500 hover:text-white"
             onClick={() => setChoice(questions[num].optionA)}
           >
             {questions[num].optionA}
           </button>
           <button
-            className="bg-white text-xl rounded shadow-md"
+            className="bg-white text-xl rounded shadow-md hover:bg-green-500 hover:text-white"
             onClick={() => setChoice(questions[num].optionB)}
           >
             {questions[num].optionB}
           </button>
           <button
-            className="bg-white text-xl rounded shadow-md"
+            className="bg-white text-xl rounded shadow-md hover:bg-green-500 hover:text-white"
             onClick={() => setChoice(questions[num].optionC)}
           >
             {questions[num].optionC}
           </button>
           <button
-            className="bg-white text-xl rounded shadow-md"
+            className="bg-white text-xl rounded shadow-md hover:bg-green-500 hover:text-white"
             onClick={() => setChoice(questions[num].optionD)}
           >
             {questions[num].optionD}
