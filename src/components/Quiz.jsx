@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../context/Context";
 
 const Quiz = () => {
-  const { questions } = useGlobalContext();
+  const { questions, setScore } = useGlobalContext();
   const [num, setNum] = useState(0);
   const [choice, setChoice] = useState("");
   const [count, setCount] = useState(30);
@@ -16,11 +16,19 @@ const Quiz = () => {
         setCount(count - 1);
       }, 1000);
     if (count === -1) {
-      navigate("/end__game");
+      navigate("/end-game");
     }
 
     return () => clearInterval(timer);
-  });
+  }, [count, navigate]);
+
+  useEffect(() => {
+    if (choice === questions[num].answer) {
+      setScore((prev) => {
+        return prev + 1;
+      });
+    }
+  }, [choice, setScore, num, questions]);
 
   return (
     <div className="quiz container mx-auto grid place-items-center h-4/5">
@@ -59,7 +67,7 @@ const Quiz = () => {
         <div className="mt-6 flex flex-row justify-between items-center">
           <div className="timer text-2xl pl-6">{count}</div>
           {num === 4 ? (
-            <button className="">Submit</button>
+            <button onClick={() => navigate("/end-game")}>Submit</button>
           ) : (
             <button onClick={() => setNum(num + 1)} className="">
               Next
