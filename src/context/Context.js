@@ -4,7 +4,7 @@ const QuizContext = createContext();
 const AppContext = ({ children }) => {
   const [questions, setQuestions] = useState(null);
   const [score, setScore] = useState(0);
-  const [percentage, setPercentage] = useState();
+  const [percentage, setPercentage] = useState(0);
 
   useEffect(() => {
     setPercentage((prev) => {
