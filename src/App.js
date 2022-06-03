@@ -10,7 +10,7 @@ function App() {
         <div className="main dark:bg-slate-900 relative">
           <Header theme={theme} setTheme={setTheme} />
           <Routes>
-            <Route path="/" element={<Menu />} />
+            <Route path="/Mathwhiz" element={<Menu />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/end-game" element={<EndQuiz />} />
           </Routes>
