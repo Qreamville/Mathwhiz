@@ -1,13 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../context/Context";
 
 const Quiz = () => {
   const { questions } = useGlobalContext();
   const [num, setNum] = useState(0);
-  const [count, setCount] = useState(25);
   const [choice, setChoice] = useState("");
+  const [count, setCount] = useState(30);
+  const navigate = useNavigate();
 
-  console.log(choice);
+  useEffect(() => {
+    const timer =
+      count > -1 &&
+      setInterval(() => {
+        setCount(count - 1);
+      }, 1000);
+    if (count === -1) {
+      navigate("/end__game");
+    }
+
+    return () => clearInterval(timer);
+  });
 
   return (
     <div className="quiz container mx-auto grid place-items-center h-4/5">
@@ -44,7 +57,7 @@ const Quiz = () => {
         </div>
         {/* The questions option ends */}
         <div className="mt-6 flex flex-row justify-between items-center">
-          <div className="timer text-2xl">{count}</div>
+          <div className="timer text-2xl pl-6">{count}</div>
           {num === 4 ? (
             <button className="">Submit</button>
           ) : (

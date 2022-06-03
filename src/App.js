@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Header, Menu, Quiz } from "./components";
+import { Header, Menu, Quiz, EndQuiz } from "./components";
 
 function App() {
   const [theme, setTheme] = useState(false);
@@ -12,6 +12,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Menu />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/end__game" element={<EndQuiz />} />
           </Routes>
         </div>
       </div>
