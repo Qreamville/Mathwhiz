@@ -4,7 +4,7 @@ import { useGlobalContext } from "../context/Context";
 import data from "../assets/data.json";
 
 const Menu = () => {
-  const { questions, setQuestions, count, setCount } = useGlobalContext();
+  const { questions, setQuestions } = useGlobalContext();
   const navigate = useNavigate();
 
   const onStart = () => {
