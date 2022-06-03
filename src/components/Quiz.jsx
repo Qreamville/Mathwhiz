@@ -31,7 +31,7 @@ const Quiz = () => {
   }, [choice, setScore, num, questions]);
 
   return (
-    <div className="quiz container mx-auto grid place-items-center h-4/5">
+    <div className="quiz container mx-auto grid place-items-center h-4/5 text-slate-900 ">
       <div className="bg-gray-200 rounded-lg shadow-xl w-3/4 p-4">
         <h1 className="text-center bg-orange-600 text-white py-2 rounded-lg">
           {questions[num].prompt}
