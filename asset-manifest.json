@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Mathwhiz/static/css/main.fe851729.css",
+    "main.js": "/Mathwhiz/static/js/main.0937d72f.js",
+    "index.html": "/Mathwhiz/index.html",
+    "main.fe851729.css.map": "/Mathwhiz/static/css/main.fe851729.css.map",
+    "main.0937d72f.js.map": "/Mathwhiz/static/js/main.0937d72f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe851729.css",
+    "static/js/main.0937d72f.js"
+  ]
+}
