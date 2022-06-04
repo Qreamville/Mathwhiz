@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Mathwhiz/static/css/main.41ef4093.css",
-    "main.js": "/Mathwhiz/static/js/main.9eebc13d.js",
+    "main.js": "/Mathwhiz/static/js/main.b5ad293f.js",
     "index.html": "/Mathwhiz/index.html",
     "main.41ef4093.css.map": "/Mathwhiz/static/css/main.41ef4093.css.map",
-    "main.9eebc13d.js.map": "/Mathwhiz/static/js/main.9eebc13d.js.map"
+    "main.b5ad293f.js.map": "/Mathwhiz/static/js/main.b5ad293f.js.map"
   },
   "entrypoints": [
     "static/css/main.41ef4093.css",
-    "static/js/main.9eebc13d.js"
+    "static/js/main.b5ad293f.js"
   ]
 }
