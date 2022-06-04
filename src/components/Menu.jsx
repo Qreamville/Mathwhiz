@@ -1,7 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../context/Context";
-import data from "../assets/data.json";
+import {
+  addition,
+  division,
+  multiplication,
+  subtraction,
+} from ".././assets/data";
 
 const Menu = () => {
   const { questions, setQuestions } = useGlobalContext();
@@ -27,22 +32,19 @@ const Menu = () => {
         <option value="default" disabled>
           Select math type
         </option>
-        <option value="addition" onClick={() => setQuestions(data.addition)}>
+        <option value="addition" onClick={() => setQuestions(addition)}>
           Addition
         </option>
-        <option
-          value="subtraction"
-          onClick={() => setQuestions(data.subtraction)}
-        >
+        <option value="subtraction" onClick={() => setQuestions(subtraction)}>
           Subtraction
         </option>
         <option
           value="multiplication"
-          onClick={() => setQuestions(data.multiplication)}
+          onClick={() => setQuestions(multiplication)}
         >
           Multiplication
         </option>
-        <option value="division" onClick={() => setQuestions(data.division)}>
+        <option value="division" onClick={() => setQuestions(division)}>
           Division
         </option>
       </select>
