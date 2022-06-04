@@ -1,8 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
+import { data } from "../assets/data";
 
 const QuizContext = createContext();
 const AppContext = ({ children }) => {
-  const [questions, setQuestions] = useState(null);
+  const [questions, setQuestions] = useState(data);
   const [score, setScore] = useState(0);
   const [percentage, setPercentage] = useState(0);
 

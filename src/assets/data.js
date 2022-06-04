@@ -1,4 +1,4 @@
-export const multiplication = [
+export const data = [
   {
     prompt: "68 x 50",
     optionA: "3000",
@@ -39,9 +39,6 @@ export const multiplication = [
     optionD: "99",
     answer: "0",
   },
-];
-
-export const subtraction = [
   {
     prompt: "1001 - 289",
     optionA: "712",
@@ -82,9 +79,6 @@ export const subtraction = [
     optionD: "789",
     answer: "789",
   },
-];
-
-export const addition = [
   {
     prompt: "20 + 50",
     optionA: "2070",
@@ -125,9 +119,6 @@ export const addition = [
     optionD: "4991",
     answer: "500",
   },
-];
-
-export const division = [
   {
     prompt: "400 / 8",
     optionA: "60",

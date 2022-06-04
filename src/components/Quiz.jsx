@@ -66,7 +66,7 @@ const Quiz = () => {
         {/* The questions option ends */}
         <div className="mt-6 flex flex-row justify-between items-center">
           <div className="timer text-2xl pl-6">{count}</div>
-          {num === 4 ? (
+          {num === 19 ? (
             <button onClick={() => navigate("/end-game")}>Submit</button>
           ) : (
             <button onClick={() => setNum(num + 1)} className="">
