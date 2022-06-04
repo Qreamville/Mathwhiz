@@ -1,10 +1,7 @@
 import React from "react";
-import { useGlobalContext } from "../context/Context";
 import { useNavigate } from "react-router-dom";
 
-const EndQuiz = () => {
-  const { percentage, score, questions, setScore, setQuestions } =
-    useGlobalContext();
+const EndQuiz = ({ percentage, score, questions, setScore, setQuestions }) => {
   const navigate = useNavigate();
 
   const onClick = () => {

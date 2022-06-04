@@ -4,11 +4,14 @@ import { useGlobalContext } from "../context/Context";
 
 const Menu = () => {
   const { questions } = useGlobalContext();
+
   const navigate = useNavigate();
 
   const onStart = () => {
     if (questions) {
       navigate("/quiz");
+    } else {
+      alert("Please select a question");
     }
   };
 
