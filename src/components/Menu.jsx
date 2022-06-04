@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useGlobalContext } from "../context/Context";
 import {
   addition,
   division,
@@ -8,13 +7,14 @@ import {
   subtraction,
 } from ".././assets/data";
 
-const Menu = () => {
-  const { questions, setQuestions } = useGlobalContext();
+const Menu = ({ questions, setQuestions }) => {
   const navigate = useNavigate();
 
   const onStart = () => {
     if (questions) {
       navigate("/quiz");
+    } else {
+      alert("Please select a question");
     }
   };
 
