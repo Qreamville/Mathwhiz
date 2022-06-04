@@ -1,13 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useGlobalContext } from "../context/Context";
 
-const EndQuiz = ({ percentage, score, questions, setScore, setQuestions }) => {
+const EndQuiz = () => {
+  const { percentage, score, questions, setScore } = useGlobalContext();
   const navigate = useNavigate();
 
   const onClick = () => {
     navigate("/Mathwhiz");
     setScore(0);
-    setQuestions(null);
   };
 
   return (

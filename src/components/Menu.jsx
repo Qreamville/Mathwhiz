@@ -10,8 +10,6 @@ const Menu = () => {
   const onStart = () => {
     if (questions) {
       navigate("/quiz");
-    } else {
-      alert("Please select a question");
     }
   };
 

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useGlobalContext } from "../context/Context";
 
-const Quiz = ({ questions, setScore }) => {
+const Quiz = () => {
+  const { questions, setScore } = useGlobalContext();
   const [num, setNum] = useState(0);
   const [choice, setChoice] = useState("");
   const [count, setCount] = useState(30);

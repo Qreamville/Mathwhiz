@@ -19,7 +19,7 @@ export const data = [
     prompt: "55 x 55",
     optionA: "5555",
     optionB: "1234",
-    optionC: "",
+    optionC: "999",
     optionD: "3025",
     answer: "3025",
   },
