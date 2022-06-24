@@ -4,12 +4,11 @@ Mathwhiz is a fully responsive, interactive React quiz application with a countd
 
 ## Users should be able to:
 
-- Navigate to a single movie page by clicking on the movie poster
-- Move to the next or previous page by clicking on prev or next button
+- Solve addition, multiplication, division and subtraction question in 30sec
+- View their score pecentage and restart the quiz to increase scores
 - Change the theme to dark or light mode
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Check out trending movies 🎬 or tv-series
 
 ## Live link: [Mathwhiz website](https://qreamville.github.io/Mathwhiz/)
 
