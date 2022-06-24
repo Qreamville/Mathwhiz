@@ -11,7 +11,7 @@ Mathwhiz is a fully responsive, interactive React quiz application with a countd
 - See hover states for all interactive elements on the page
 - Check out trending movies 🎬 or tv-series
 
-## Live link: [Nolly Flix website](https://qreamville.github.io/Nolly-Flix/)
+## Live link: [Mathwhiz website](https://qreamville.github.io/Mathwhiz/)
 
 ### Built with
 
